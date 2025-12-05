@@ -11,6 +11,12 @@ agent_options:
   path: ./lib/agent-options.yml
 controls: # This cannot be set here and in no-team.yml
 org_settings:
+  org_info:
+    org_name: InvaderZim
+    webhook_settings:
+      activities_webhook:
+        enable_activities_webhook: true
+        destination_url: https://webhook.site/1d8923d4-9fcf-4ba4-99eb-a5acf0e32a5f
   fleet_desktop:
     transparency_url: https://catoftheday.com
   host_expiry_settings:
