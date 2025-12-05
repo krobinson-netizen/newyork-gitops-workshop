@@ -18,6 +18,12 @@ queries:
 agent_options:
   path: ../lib/agent-options.yml
 controls:
+  ipados_updates:
+    deadline: "2025-12-31"
+    minimum_version: "26.0"
+  enable_disk_encryption: true
+  scripts:
+    - path: ../lib/windows/scripts/set-wallpaper.ps1
   macos_settings:
     custom_settings:
     - path: ../lib/macos/configuration-profiles/disable-bluetooth-file-sharing.mobileconfig
@@ -32,3 +38,6 @@ team_settings:
     enable_host_users: true
     enable_software_inventory: true
 software:
+  packages:
+    -path: ../lib/windows/software/cloudflare-warp.yml
+    self_service: false
